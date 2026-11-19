@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DJ Rony L · Fortaleza</title>
+<meta name="description" content="DJ Rony L (Ronielly Santiago), de Fortaleza. Ouça o set On the New Era e faça o booking com a PROD Oficial. No comando do Shakenado, bar e alimentação para eventos.">
+<!--
+  Montado com os blocos, o tema e o CSS do Waveform (waveform/site.css é cópia de src/components/site/site.css).
+  Cada <section> corresponde a um bloco do editor; o passo a passo está em MONTAGEM.md.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Chakra+Petch:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="waveform/site.css">
+<style>
+  /* Fontes como o next/font expõe no Waveform: --font-<chave>. */
+  :root{--font-orbitron:"Orbitron";--font-chakra-petch:"Chakra Petch";--font-dm-sans:"DM Sans"}
+  body{margin:0}
+</style>
+</head>
+<body>
+<!-- Tema do Waveform (Aparência): as mesmas variáveis que themeToCssVars() gera. -->
+<div class="wf-site" style="
+  --wf-bg:#0b0a0d; --wf-surface:#17141a; --wf-text:#f4efe8; --wf-muted:#b3aaa3;
+  --wf-primary:#ff4d2e; --wf-accent:#ff9a1f;
+  --wf-primary-rgb:255, 77, 46; --wf-accent-rgb:255, 154, 31; --wf-bg-rgb:11, 10, 13;
+  --wf-on-accent:#0b0314; --wf-on-primary:#0b0314; --wf-line:rgba(255, 77, 46, .35); --wf-radius:6px;
+  --wf-font-title:var(--font-orbitron); --wf-size-title:1.4;
+  --wf-font-heading:var(--font-orbitron); --wf-size-heading:.85;
+  --wf-font-eyebrow:var(--font-chakra-petch); --wf-size-eyebrow:1.1;
+  --wf-font-nav:var(--font-chakra-petch); --wf-size-nav:1.1;
+  --wf-font-body:var(--font-dm-sans); --wf-size-body:1.05;
+  --wf-font-button:var(--font-chakra-petch); --wf-size-button:1.05;">
+
+  <div style="position:relative">
+    <header class="wf-header wf-header--overlay">
+      <a href="#" class="wf-logo" aria-label="DJ Rony L"><span>RONY-L</span></a>
+      <button type="button" class="wf-nav-toggle" aria-expanded="false" aria-controls="wf-menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      <nav id="wf-menu" class="wf-nav" aria-label="Navegação principal">
+        <a href="#sets">Sets</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#shakenado">Shakenado</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#booking">Booking</a>
+      </nav>
+    </header>
+
+    <!-- Bloco: Abertura (hero) · fundo: foto · alinhamento: esquerda · sombra: forte -->
+    <section class="wf-hero" aria-label="DJ Rony L">
+      <div class="wf-hero__media" style="--wf-fx:.5;--wf-fy:.45;--wf-aspect:1920 / 1280">
+        <picture><img src="assets/dfc-5183-hands-on-mixing-a-dj.jpg" alt="" loading="eager" decoding="async"></picture>
+      </div>
+      <div class="wf-hero__shade wf-hero__shade--strong"></div>
+      <div class="wf-hero__content wf-hero__content--left">
+        <span class="wf-eyebrow">DJ · Fortaleza, Ceará</span>
+        <h1 class="wf-h1"><span><span>Rony </span><em>L</em></span></h1>
+        <p class="wf-lead" style="max-width:640px">Música eletrônica e psytrance direto de Fortaleza. Dá o play no set On the New Era e leva o Rony L pra sua pista.</p>
+        <div class="wf-hero__ctas">
+          <a href="https://m.soundcloud.com/rony-l/on-the-new-era" class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Ouvir o set</a>
+          <a href="#booking" class="wf-btn wf-btn--outline">Booking</a>
+        </div>
+        <a href="#sets" class="wf-scroll">Role
+          <svg width="18" height="26" viewBox="0 0 18 26" fill="none" stroke="var(--wf-accent)" stroke-width="1.6" aria-hidden="true"><rect x="1" y="1" width="16" height="24" rx="8"/><circle class="wf-beat" cx="9" cy="8" r="2" fill="var(--wf-accent)" stroke="none"/></svg>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <main id="conteudo">
+    <!-- Bloco: Mídias (media) · sem vídeo em destaque · cartões lado a lado -->
+    <section class="wf-section" id="sets">
+      <div class="wf-head">
+        <div class="wf-head__text">
+          <span class="wf-eyebrow">Sets</span>
+          <h2 class="wf-h2"><span>Dá o </span><em>play</em></h2>
+        </div>
+      </div>
+      <div class="wf-media wf-media--side">
+        <div class="wf-media__side">
+          <div class="wf-media__row">
+            <a href="https://m.soundcloud.com/rony-l/on-the-new-era" class="wf-card wf-icon-card" target="_blank" rel="noopener noreferrer">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+              <span><strong><span>On the </span><em>New Era</em></strong><span class="wf-muted" style="font-size:15px">O set novo, no SoundCloud</span></span>
+            </a>
+            <a href="https://soundcloud.com/rony-l" class="wf-card wf-icon-card" target="_blank" rel="noopener noreferrer">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+              <span><strong>Todos os sets</strong><span class="wf-muted" style="font-size:15px">soundcloud.com/rony-l</span></span>
+            </a>
+            <a href="https://www.instagram.com/djrony_l/" class="wf-card wf-icon-card" target="_blank" rel="noopener noreferrer">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+              <span><strong>Bastidores</strong><span class="wf-muted" style="font-size:15px">@djrony_l no Instagram</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Sobre (about) · foto à esquerda -->
+    <section class="wf-section" id="sobre">
+      <div class="wf-about">
+        <div>
+          <img src="assets/dj-headphone-on-mixer.jpg" width="1848" height="1479" alt="Fone de DJ sobre o mixer" loading="lazy" decoding="async" class="wf-about__image">
+        </div>
+        <div>
+          <div class="wf-head">
+            <div class="wf-head__text">
+              <span class="wf-eyebrow">Quem toca</span>
+              <h2 class="wf-h2"><span>Ronielly </span><em>Santiago</em></h2>
+            </div>
+          </div>
+          <div class="wf-prose">
+            <p><span>Rony L é o projeto de DJ de Ronielly Santiago, de Fortaleza. Nas pistas da cena eletrônica cearense, do psytrance às festas ao ar livre, ele monta sets pra quem gosta de dançar até o fim.</span></p>
+            <p><span>Fora da cabine, está no comando do Shakenado, bar e alimentação para eventos, e é parceiro do Chegue Bar. Ou seja: entende de festa dos dois lados do balcão.</span></p>
+          </div>
+          <p style="margin-top:28px"><a href="#booking" class="wf-btn wf-btn--primary">Fazer booking</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Agenda (agenda) · lê os eventos cadastrados em "Eventos" -->
+    <section class="wf-section" id="agenda">
+      <div class="wf-head">
+        <div class="wf-head__text">
+          <span class="wf-eyebrow">Agenda</span>
+          <h2 class="wf-h2"><span>Próximas </span><em>datas</em></h2>
+        </div>
+      </div>
+      <div class="wf-agenda">
+        <article class="wf-event">
+          <div class="wf-event__date"><time datetime="2026-11-28T22:00:00-03:00">28 NOV</time></div>
+          <div class="wf-event__info">
+            <h3 class="wf-event__title"><span>Psyclub</span></h3>
+            <p class="wf-muted" style="font-size:16px">Fortaleza · 22:00</p>
+          </div>
+          <div class="wf-event__actions"><a href="https://www.instagram.com/djrony_l/" class="wf-btn wf-btn--small wf-btn--outline" target="_blank" rel="noopener noreferrer">Mais info</a></div>
+        </article>
+        <article class="wf-event">
+          <div class="wf-event__date"><time datetime="2026-12-12T16:00:00-03:00">12 DEZ</time></div>
+          <div class="wf-event__info">
+            <h3 class="wf-event__title"><span>Ano Zero · Reset</span></h3>
+            <p class="wf-muted" style="font-size:16px">Fortaleza · 16:00</p>
+          </div>
+          <div class="wf-event__actions"><a href="https://www.instagram.com/djrony_l/" class="wf-btn wf-btn--small wf-btn--outline" target="_blank" rel="noopener noreferrer">Mais info</a></div>
+        </article>
+        <article class="wf-event">
+          <div class="wf-event__date"><time datetime="2026-12-20T17:00:00-03:00">20 DEZ</time></div>
+          <div class="wf-event__info">
+            <h3 class="wf-event__title"><span>Sunset </span><em>open air</em></h3>
+            <p class="wf-muted" style="font-size:16px">Fortaleza · 17:00</p>
+          </div>
+          <div class="wf-event__actions"><a href="https://www.instagram.com/djrony_l/" class="wf-btn wf-btn--small wf-btn--outline" target="_blank" rel="noopener noreferrer">Mais info</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bloco: Vitrine (showcase) · fotos à direita · troca a cada 5 s -->
+    <section class="wf-section" id="shakenado" style="padding-top:60px;padding-bottom:20px">
+      <div class="wf-card wf-showcase">
+        <div class="wf-showcase__text">
+          <span class="wf-eyebrow">Bar e alimentação para eventos</span>
+          <h2 class="wf-h2"><span>No comando do </span><em>Shakenado</em></h2>
+          <p class="wf-showcase__lead">Além da música, o Rony comanda o Shakenado: bar e alimentação para festas e eventos em geral. Drinks, comida e estrutura pra sua festa não parar.</p>
+          <a href="https://www.instagram.com/_shakenado/" class="wf-showcase__cta" target="_blank" rel="noopener noreferrer">Conhecer o Shakenado</a>
+        </div>
+        <div class="wf-showcase__media" role="region" aria-roledescription="carrossel" aria-label="Shakenado">
+          <div class="wf-showcase__frame">
+            <div class="wf-showcase__slide is-active"><img src="assets/colorful-cocktails-served-at-a-bar-countertop.jpg" width="1920" height="1272" alt="Drinks coloridos servidos no balcão" loading="eager" decoding="async"></div>
+            <div class="wf-showcase__slide" aria-hidden="true"><img src="assets/green-jar-ibiza-event.jpg" width="1920" height="1345" alt="Bar montado ao ar livre para um evento" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="wf-showcase__dots">
+            <button type="button" class="wf-showcase__dot" aria-label="Mostrar a foto 1" aria-current="true"></button>
+            <button type="button" class="wf-showcase__dot" aria-label="Mostrar a foto 2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Galeria (gallery) · layout: grade -->
+    <section class="wf-section" id="fotos">
+      <div class="wf-head">
+        <div class="wf-head__text">
+          <span class="wf-eyebrow">Na pista</span>
+          <h2 class="wf-h2"><span>Até o </span><em>sol nascer</em></h2>
+        </div>
+      </div>
+      <div class="wf-gallery-grid">
+        <figure><img src="assets/dance-temple-boom-2012.jpg" width="1000" height="657" alt="Pista de psytrance lotada sob decoração colorida" loading="lazy" decoding="async"><figcaption>Pista de psytrance</figcaption></figure>
+        <figure><img src="assets/dfc-5183-hands-on-mixing-a-dj.jpg" width="1920" height="1280" alt="Mãos no mixer sob luz vermelha" loading="lazy" decoding="async"><figcaption>Na cabine</figcaption></figure>
+        <figure><img src="assets/dj-headphone-on-mixer.jpg" width="1848" height="1479" alt="Fone de DJ sobre o mixer" loading="lazy" decoding="async"><figcaption>Antes do set</figcaption></figure>
+        <figure><img src="assets/boom-festival-1997.jpg" width="1920" height="846" alt="Público em festa ao ar livre" loading="lazy" decoding="async"><figcaption>Festa ao ar livre</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Bloco: Faixa de chamada (cta_banner) -->
+    <section class="wf-section" style="padding-top:60px;padding-bottom:20px">
+      <div class="wf-card wf-banner">
+        <div style="flex:1 1 320px;min-width:0">
+          <p class="wf-banner__title"><span>Quer o Rony L na sua </span><em>festa</em><span>?</span></p>
+          <p class="wf-muted" style="font-size:17px;margin-top:4px">O booking é com a PROD Oficial: datas, cachê e rider técnico.</p>
+        </div>
+        <a href="https://www.instagram.com/prodoficial_/" class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Falar com a PROD</a>
+      </div>
+    </section>
+
+    <!-- Bloco: Divisor (divider) · onda · 104 px -->
+    <div class="wf-wave" aria-hidden="true" style="height:104px"><div class="wf-wave__line"></div><div class="wf-wave__bars" id="wave"></div></div>
+
+    <!-- Bloco: Contato (contact) -->
+    <section class="wf-section" id="booking" style="padding-bottom:120px">
+      <div class="wf-contact">
+        <div>
+          <span class="wf-eyebrow">Booking</span>
+          <h2 class="wf-h2"><span>Leva o Rony pra sua </span><em>pista</em></h2>
+          <p class="wf-lead" style="max-width:460px">Para datas e cachê, fale com a PROD Oficial. Para o bar do seu evento, chame o Shakenado.</p>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/prodoficial_/" class="wf-card wf-contact__item" target="_blank" rel="noopener noreferrer"><small>Booking</small><strong>@prodoficial_</strong></a>
+          <a href="https://www.instagram.com/_shakenado/" class="wf-card wf-contact__item" target="_blank" rel="noopener noreferrer"><small>Bar para eventos</small><strong>@_shakenado</strong></a>
+          <a href="https://www.instagram.com/djrony_l/" class="wf-card wf-contact__item" target="_blank" rel="noopener noreferrer"><small>Instagram</small><strong>@djrony_l</strong></a>
+          <a href="https://www.instagram.com/prodoficial_/" class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Fazer booking</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Redes sociais (social_links) · centralizado -->
+    <section class="wf-section" style="padding-top:60px;padding-bottom:20px;text-align:center">
+      <p class="wf-eyebrow" style="margin-bottom:20px">Siga o Rony</p>
+      <div class="wf-socials" style="justify-content:center">
+        <a href="https://www.instagram.com/djrony_l/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://soundcloud.com/rony-l" aria-label="SoundCloud" target="_blank" rel="noopener noreferrer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bloco: Rodapé (footer) -->
+  <footer class="wf-footer">
+    <strong style="font-family:var(--wf-font-heading);color:var(--wf-text)">RONY-L</strong>
+    <span>DJ · Fortaleza, Ceará, Brasil</span>
+    <nav class="wf-footer__links" aria-label="Links do rodapé">
+      <a href="https://m.soundcloud.com/rony-l/on-the-new-era" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+      <a href="https://www.instagram.com/djrony_l/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.instagram.com/prodoficial_/" target="_blank" rel="noopener noreferrer">Booking</a>
+    </nav>
+    <a href="#" style="color:var(--wf-accent)">Voltar ao topo ↑</a>
+  </footer>
+
+  <aside class="wf-credit">
+    <span>Feito com Waveform.</span> <a href="https://wa.me/5585991623247?text=Oi!%20Conheci%20a%20Waveform%20pela%20p%C3%A1gina%20de%20Rony%20L%20e%20quero%20saber%20mais." target="_blank" rel="noopener noreferrer">Quer a sua? Fale com a Cuebase</a>
+  </aside>
+  <p class="wf-credit" style="padding-top:0">Fotos de referência: <a href="https://commons.wikimedia.org/w/index.php?curid=188629434">mixer</a>, PattayaPatrol, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Dj-Headphone-on-Mixer.jpg">fone no mixer</a>, Djmichank, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Dance_Temple-Boom_2012.jpg">Dance Temple</a>, Serialslb, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Boom_Festival_1997.jpg">festa ao ar livre</a>, Racheland Deckard, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Colorful_cocktails_served_at_a_bar_countertop.jpg">drinks</a>, Shixart1985, CC BY 2.0; <a href="https://commons.wikimedia.org/wiki/File:Green_Jar_Ibiza_event.jpg">bar de evento</a>, Green Jar Ibiza, CC BY-SA 4.0. Via Wikimedia Commons.</p>
+</div>
+
+<script>
+  // Cabeçalho: no celular os links viram menu (como o SiteHeader do Waveform).
+  const header = document.querySelector('.wf-header'), toggle = document.querySelector('.wf-nav-toggle')
+  toggle.addEventListener('click', () => { const open = header.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', String(open)); toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu') })
+  document.querySelectorAll('#wf-menu a').forEach((a) => a.addEventListener('click', () => header.classList.remove('is-open')))
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && header.classList.remove('is-open'))
+
+  // Vitrine: troca de foto a cada 5 s (como o ShowcaseCarousel do Waveform).
+  const slides = [...document.querySelectorAll('.wf-showcase__slide')], dots = [...document.querySelectorAll('.wf-showcase__dot')]
+  let active = 0
+  const show = (i) => { active = i; slides.forEach((s, j) => { s.classList.toggle('is-active', j === i); j === i ? s.removeAttribute('aria-hidden') : s.setAttribute('aria-hidden', 'true') }); dots.forEach((d, j) => j === i ? d.setAttribute('aria-current', 'true') : d.removeAttribute('aria-current')) }
+  dots.forEach((d, i) => d.addEventListener('click', () => show(i)))
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(() => { if (!document.hidden) show((active + 1) % slides.length) }, 5000)
+
+  // Divisor em onda: as mesmas barras que o DividerBlock do Waveform desenha (do primário ao destaque).
+  const lerp = (a, b, t) => { const pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16); const ch = (s) => Math.round(((pa >> s) & 255) + (((pb >> s) & 255) - ((pa >> s) & 255)) * t); return '#' + [16, 8, 0].map((s) => ch(s).toString(16).padStart(2, '0')).join('') }
+  const N = 160, MAX = Math.max(24, Math.round(104 * 0.62)), wave = document.getElementById('wave')
+  for (let i = 0; i < N; i++) { const t = i / (N - 1), env = 0.16 + 0.84 * Math.exp(-(((t - 0.5) / 0.3) ** 2)), ripple = 0.5 + 0.5 * Math.abs(Math.sin(i * 1.7) * Math.cos(i * 0.63 + 1)); const el = document.createElement('i'); el.style.height = Math.max(3, Math.round(MAX * env * ripple)) + 'px'; el.style.background = lerp('#ff4d2e', '#ff9a1f', t); wave.appendChild(el) }
+</script>
+</body>
+</html>
